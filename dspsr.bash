@@ -19,7 +19,7 @@ do
 	      do
 		  cd $observation
 		  cd rawvoltages/SAP0/BEAM0/raw-8bit/
-		  dspsr -F 1000:D -A -L 10 -a PSRFITS -minram 1 -S 1  -fft-bench -E ../../../../*.par -O $observation *SAP000_B000_S0_*_bf.h5
+		  dspsr -F 1000:D -A -L 5 -a PSRFITS -minram 1 -S 1  -fft-bench -E ../../../../*.par -O $observation *SAP000_B000_S0_*_bf.h5
 		  mv *.ar ../../../../../archives/
 		  cd ../../../../../
 	      done
