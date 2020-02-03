@@ -17,7 +17,8 @@ do
 	      mkdir archives
 	      for observation in L*;
 	      do
-		  cd $observation/rawvoltages/SAP0/BEAM0/raw-8bit/
+		  cd $observation
+		  cd rawvoltages/SAP0/BEAM0/raw-8bit/
 		  dspsr -F 1000:D -A -L 10 -a PSRFITS -minram 1 -S 1  -fft-bench -E ../../../../*.par -O $observation *SAP000_B000_S0_*_bf.h5
 		  mv *.ar ../../../../../archives/
 		  cd ../../../../../
