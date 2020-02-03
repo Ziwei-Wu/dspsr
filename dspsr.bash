@@ -1,5 +1,16 @@
 #!/bin/bash
 
+"""
+yes, the LOFAR backend is missing in backends.list You have to add "lofar_dal" there and recompile dspsr.
+(you should also install LOFAR DAL library beforehand - https://github.com/nextgen-astrodata/DAL.git)
+
+    Hi Ziwei,
+
+    I guess this has to do with a missing backend in backends.list when
+    compiling dspsr. I can recompile if someone gives me a pointer which one
+    to add for this kind of data.
+"""
+
 for pulsar in /data/zwu/Lofar_core/B*;
 do
 	      cd $pulsar
